@@ -43,6 +43,7 @@ class Rational:
         return self + (-other)
 
     def __mul__(self, other):
+
         pass
 
     def __divmod__(self, other):
@@ -54,7 +55,7 @@ class Rational:
     __repr__ = __str__
 
     def __float__(self):
-        pass
+        return self.sign * float(self.n)
 
 
 if __name__ == '__main__':
